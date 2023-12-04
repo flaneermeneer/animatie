@@ -1,0 +1,42 @@
+body{
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+width: 50em;
+height: 30em;
+}
+
+article{
+    display: grid;
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+button > img{
+    height:11em ;
+    width: 20em;
+}
+ h1,h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+ }
+*{
+    font-family: Tahoma, sans-serif;
+    color: white;
+}
+@media (max-width:900px) {
+	div {
+
+		display: grid;
+		grid-template-columns: 90%;
+        justify-content: center;
+	
+
+	}
+}
