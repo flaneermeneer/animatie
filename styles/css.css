@@ -17,14 +17,19 @@ div{
     display: flex;
     flex-direction: row;
 }
+
+button{
+    background: none;
+    border: none;
+}
 button > img{
     height:11em ;
     width: 20em;
 }
- h1,h2{
+ h1{
     display: flex;
     justify-content: center;
-    padding-bottom: 5em;
+    padding: 5em;
  }
 *{
     font-family: Tahoma, sans-serif;

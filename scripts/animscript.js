@@ -5,6 +5,8 @@
   var button2 = document.getElementById('button2');
   var button3 = document.getElementById('button3');
   var image = document.getElementById('ridder');
+  var audio = new Audio('./sounds/praysound.mp3');
+
 
 
   // Add event listener to Button 1
@@ -19,14 +21,15 @@
 
 button1.addEventListener('click', function () {
   
-  image.src = "./images/anim1.gif"
+  image.src = "./images/prayer-def.gif"
+  audio.play();
       
    
   });
 
 button2.addEventListener('click', function () {
   
-  image.src = "./images/anim2.gif"
+  image.src = "./images/sword.gif"
     
  
 });
@@ -34,7 +37,7 @@ button2.addEventListener('click', function () {
 
 button3.addEventListener('click', function () {
   
-  image.src = "./images/anim3.gif"
+  image.src = "./images/death.gif"
   
 
 });
