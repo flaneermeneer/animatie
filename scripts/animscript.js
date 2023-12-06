@@ -5,9 +5,10 @@
   var button2 = document.getElementById('button2');
   var button3 = document.getElementById('button3');
   var image = document.getElementById('ridder');
-  var audio = new Audio('./sounds/praysound.mp3');
-
-
+  var audio = new Audio('./sounds/bell.mp3');
+  var swordaudio = new Audio('./sounds/Sword.mp3');
+  var arrowaudio = new Audio('./sounds/arrow.mp3');
+  var scream = new Audio('./sounds/scream.mp3');
 
   // Add event listener to Button 1
   button1.addEventListener('click', function() {
@@ -21,7 +22,10 @@
 
 button1.addEventListener('click', function () {
   
-  image.src = "./images/prayer-def.gif"
+  
+  setTimeout(() => {
+    image.src = "./images/BIDLAN.gif"
+  }, 2000); 
   audio.play();
       
    
@@ -29,15 +33,28 @@ button1.addEventListener('click', function () {
 
 button2.addEventListener('click', function () {
   
-  image.src = "./images/sword.gif"
-    
+  image.src = "./images/ZWAARDDEF.gif"
+
+  setTimeout(() => {
+    swordaudio.play();
+  }, 1500); 
+
  
 });
 
 
 button3.addEventListener('click', function () {
   
-  image.src = "./images/death.gif"
+  image.src = "./images/STERF.gif"
+  
+  setTimeout(() => {
+    arrowaudio.play();
+  }, ); 
+
+  setTimeout(() => {
+    scream.play();
+  },1000 ); 
+  
   
 
 });
