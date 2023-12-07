@@ -3,7 +3,12 @@
     src: url("../vinque-rg.woff") format("woff");
   }
   
-
+#button2{
+    visibility: hidden;
+}
+#button3{
+    visibility: hidden;
+}
 body{
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
@@ -32,12 +37,23 @@ button > img{
     height:11em ;
     width: 20em;
 }
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: "vinq";
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black; 
+    font-size: 2em;
+
+ }
  h1{
     display: flex;
     justify-content: center;
     padding: 1em;
     font-family: "vinq";
     font-size: 4.5em;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black; 
  }
 *{
     font-family: Tahoma, sans-serif;
